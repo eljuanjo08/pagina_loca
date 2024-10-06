@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth < 867 && active) {
+    if (window.innerWidth > 867 && active) {
         xmark.style.display = 'none';
         bars.style.display = 'block';
         menuDisplay.style.display = 'none';
