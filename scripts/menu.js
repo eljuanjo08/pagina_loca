@@ -17,3 +17,12 @@ button.addEventListener('click', () => {
         active = false;
     }
 });
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 867 && active) {
+        xmark.style.display = 'none';
+        bars.style.display = 'block';
+        menuDisplay.style.display = 'none';
+        active = false;
+    }
+});
